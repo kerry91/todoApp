@@ -1,0 +1,58 @@
+html{
+  Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans);
+}
+
+body{
+    background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+    margin:0;
+    padding:0;
+}
+
+.bg-desktop {
+  width:100%;
+  position:absolute;
+  top:10%;
+  z-index: -1;
+}
+
+.main-grid{
+  margin-top:10%;
+}
+
+.todo{
+  color: white;
+}
+
+.subnav-left{
+  font-size: 12px;
+}
+
+.subnav-middle{
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.subnav-right{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.items{
+  list-style: none;
+}
+
+.done {
+    background-color: red;
+}
+
+#enter{
+  visibility: hidden;
+}
+
+.span{
+  padding:0 !important;
+}
+
+[class*=uk-align] {
+    margin-bottom: 0 !important;
+}
