@@ -16,13 +16,13 @@ function inputLength() {
 
 //Creates the new item contents
 function createListElement() {
-  const div = document.createElement("div"); 
-  const span = document.createElement("span"); 
-  const remove = document.createElement("button"); 
-  const removeIcon = document.createElement("i"); 
-  const check = document.createElement("button"); 
-  const checkIcon = document.createElement("i"); 
-  span.textContent = input.value; 
+  const div = document.createElement("div");
+  const span = document.createElement("span");
+  const remove = document.createElement("button");
+  const removeIcon = document.createElement("i");
+  const check = document.createElement("button");
+  const checkIcon = document.createElement("i");
+  span.textContent = input.value;
   span.setAttribute("class", "span uk-card uk-card-hover uk-card-default uk-card-body uk-card-small uk-text-left");
   remove.setAttribute("class", "box uk-button uk-button-default uk-align-right");
   remove.style.border = "none";
@@ -67,9 +67,10 @@ function toggleDarkMode() {
   let uI = document.getElementById("userInput");
   let mI = document.getElementById("mainItems");
   let s = document.getElementsByClassName("span");
+  let textBox = document.getElementById("userinput");
   uI.setAttribute("class", "uk-card uk-card-secondary uk-card-body uk-width-1-1@m");
   mI.setAttribute("class", "uk-card uk-card-secondary uk-card-body");
-  
+
   element.classList.toggle("dark-mode");
 
   if (image.src.match("icon-moon")) {
@@ -77,11 +78,15 @@ function toggleDarkMode() {
     imageBanner.src = "images/bg-desktop-dark.jpg";
     uI.setAttribute("class", "uk-card uk-card-secondary uk-card-body uk-width-1-1@m");
     mI.setAttribute("class", "uk-card uk-card-secondary uk-card-body");
+    textBox.style.background = "#222";
+    textBox.style.color = "white";
   } else {
     image.src = "images/icon-moon.svg";
     imageBanner.src = "images/bg-desktop-light.jpg";
     uI.setAttribute("class", "uk-card uk-card-default uk-card-body uk-width-1-1@m");
     mI.setAttribute("class", "uk-card uk-card-default uk-card-body");
+    textBox.style.background = "white";
+    textBox.style.color = "black";
   }
 }
 

@@ -72,6 +72,25 @@ body{
   font-weight: bold;
 }
 
+input[type=text]{
+  width: 90%;
+  padding: 12px 20px;
+  margin-top: 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+
+}
+
+:focus-visible {
+    outline: none;
+}
+
+.uk-card{
+  border-radius:4px;
+  padding:0;
+}
+
 /*tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
