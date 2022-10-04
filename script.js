@@ -26,10 +26,10 @@ function createListElement() {
   span.setAttribute("class", "span uk-card uk-card-hover uk-card-default uk-card-body uk-card-small uk-text-left");
   remove.setAttribute("class", "box uk-button uk-button-default uk-align-right");
   remove.style.border = "none";
-  removeIcon.setAttribute("class", "fa-solid fa-xmark");
+  removeIcon.setAttribute("class", "fa-solid fa-xmark fa-xl");
   check.setAttribute("class", "checkOff uk-button uk-button-default uk-align-left");
   check.style.border = "none";
-  checkIcon.setAttribute("class", "fa-solid fa-check");
+  checkIcon.setAttribute("class", "fa-regular fa-circle fa-xl");
   div.setAttribute("class", "sort-div");
 
   sort.appendChild(div);
@@ -56,7 +56,6 @@ function createListElement() {
         event.target.classList.toggle("done");
       });
     }
-
 }
 
 //toggles the backround, images and cards
