@@ -70,3 +70,18 @@ body{
 .todo{
   font-weight: bold;
 }
+
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/*mobile*/
+@media screen and (max-width: 767px){
+  .main-grid{
+    margin-top:0%;
+  }
+  #mainItems{
+    padding-left:10%;
+  }
+}
