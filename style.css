@@ -11,12 +11,12 @@ body{
 .bg-desktop {
   width:100%;
   position:absolute;
-  top:10%;
+  top:0;
   z-index: -1;
 }
 
 .main-grid{
-  margin-top:10%;
+  margin-top:5%;
 }
 
 .todo{
@@ -55,4 +55,18 @@ body{
 
 [class*=uk-align] {
     margin-bottom: 0 !important;
+}
+
+#modeButton{
+  background: transparent;
+  border: none;
+}
+
+.dark-mode{
+  background:black;
+  color:white;
+}
+
+.todo{
+  font-weight: bold;
 }

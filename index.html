@@ -20,7 +20,7 @@
   <body>
     <div class="bg-desktop">
       <img
-        id="bg-desktop-light"
+        id="banner"
         src="images/bg-desktop-light.jpg"
         alt="bg-desktop-light"
         width="100%"
@@ -35,11 +35,11 @@
       <div></div>
       <div>
         <div uk-grid>
-    <div class="uk-width-1-2@m uk-text-left"><h1 class="todo">TO DO</h1></div>
-    <div class="uk-width-1-2@m uk-text-right"><img src="images/icon-sun.svg"/></div>
+    <div class="uk-width-1-2@m uk-text-left"><h1 class="todo">T O D O</h1></div>
+    <div class="uk-width-1-2@m uk-text-right"><button id="modeButton" onclick="toggleDarkMode()"><img id="moonSun" src="images/icon-moon.svg"/></a></div></button>
 </div>
 <br>
-        <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+        <div id="userInput" class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
           <div class="inputs">
             <input
               id="userinput"
@@ -56,7 +56,7 @@
 
       <div></div>
 
-      <div class="uk-card uk-card-default uk-card-body">
+      <div id="mainItems" class="uk-card uk-card-default uk-card-body">
         <div class="uk-grid uk-grid-large uk-grid-column-small uk-grid-row-small uk-child-width-expand@s" uk-grid>
           <div id="sortable" uk-sortable="group: sortable-group">
 
@@ -91,7 +91,7 @@
 
       <div></div>
       <div></div>
-      <div><span class="uk-text-center">Drag and drop to reorder list</span></div>
+      <div><span id="dragDropTxt" class="uk-text-center">Drag and drop to reorder list</span></div>
     </div>
 
 
